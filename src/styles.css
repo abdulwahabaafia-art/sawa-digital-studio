@@ -43,7 +43,7 @@
 .brand:hover .brand-mark{transform:rotate(-8deg) scale(1.06)}
 .brand-word{display:flex;flex-direction:column;line-height:1}
 .brand-name{font-family:"Instrument Serif",serif;font-style:italic;font-size:32px;background:var(--gradient-hot);background-size:200% 200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:hue-flow 6s ease-in-out infinite;padding-right:4px}
-.brand-sub{font-size:8.5px;letter-spacing:0;text-transform:uppercase;font-weight:600;color:var(--primary);margin-top:4px}
+.brand-sub{font-size:8.5px;letter-spacing:0;text-transform:uppercase;font-weight:600;color:var(--ink);margin-top:4px}
 .home-hero h1>span:first-child{font-family:"Instrument Serif",serif;font-style:italic;font-weight:400;background:var(--gradient-hot);background-size:200% 200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:rise 1s var(--ease) both,hue-flow 7s ease-in-out infinite}
 .lux-card,.tool-card,.directory-link,.process-item,.quick-form,.quick-done,.team-banner,.work-art,.cta-band .studio-button{border-radius:var(--radius-card)}
 .studio-button,.header-cta,.menu-trigger{border-radius:999px}
@@ -80,3 +80,18 @@
 .tool-brand-icon svg{width:28px;height:28px}
 @media(max-width:700px){.page-back{margin-bottom:24px}.home-hero .hero-enterprises{font-size:52px}}
 @media(max-width:370px){.home-hero .hero-enterprises{font-size:44px}}
+/* v6 — inferno hero */
+.home-hero{background:
+  radial-gradient(1100px 640px at 88% -12%, color-mix(in oklab,var(--hot-2) 34%,transparent), transparent 66%),
+  radial-gradient(920px 580px at -8% 108%, color-mix(in oklab,var(--hot-3) 30%,transparent), transparent 66%),
+  linear-gradient(168deg, oklch(.97 .035 18), oklch(.95 .06 44) 55%, oklch(.95 .05 350))}
+.home-hero::after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:
+  radial-gradient(600px 520px at 90% 10%, color-mix(in oklab,var(--hot-2) 26%,transparent), transparent 70%),
+  radial-gradient(500px 500px at 98% 95%, color-mix(in oklab,var(--hot-1) 24%,transparent), transparent 70%)}
+.hero-image{filter:saturate(1.35) contrast(1.04)}
+.hero-content{z-index:2}
+.home-hero .hero-enterprises{background:var(--gradient-hot);background-size:200% 200%;-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 16px 32px color-mix(in oklab,var(--hot-1) 32%,transparent));animation:rise 1s var(--ease) .12s both,hue-flow 7s ease-in-out infinite}
+.home-hero h1>span:first-child{filter:drop-shadow(0 16px 32px color-mix(in oklab,var(--hot-3) 30%,transparent))}
+.home-hero .studio-button{background:var(--gradient-hot);background-size:200% 200%;animation:hue-flow 6s ease-in-out infinite;box-shadow:0 16px 36px -14px color-mix(in oklab,var(--hot-1) 55%,transparent)}
+.ticker-strip{background:var(--gradient-hot);background-size:200% 200%;animation:hue-flow 14s ease-in-out infinite}
+.cta-band{background:var(--gradient-hot);background-size:200% 200%;animation:hue-flow 16s ease-in-out infinite}
